@@ -63,13 +63,15 @@ Este proyecto es una plataforma web diseñada para gestionar una red de transpor
 
 ## Contacto
 
-Para más información, visita nuestra página de contacto (sección en el footer de las páginas).
+Oussama Brahmi
+Email:oussama.brahmi0608@gmail.com
+Tel:607026859
 
 ---
 
 ## Créditos
 
-Este proyecto fue desarrollado por [Tu Nombre/Equipo]. Todos los derechos reservados &copy; 2024 Drone Delivery.
+Este proyecto fue desarrollado por [Oussama Brahmi]. Todos los derechos reservados &copy; 2024 Drone Delivery.
 
 ## Licencia
 
