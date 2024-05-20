@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Red de Transporte Autónomo con Drones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu-icon" id="menu-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="menu" id="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="dashboard.html">Panel de Usuario</a></li>
+                <li><a href="#history-container">Historial</a></li>
+                <li><a href="#tracking-container">Rastrear Paquetes</a></li>
+            </ul>
+            <img id="logo"  class="nav-logo" src="img/drone_paquete.png" alt="Logo">
+        </nav>
+    </header>
+    
+    <article class="container">
+        <h1>Panel de Usuario</h1>
+        
+        <section class="form-container">
+            <form id="shipment-form" method="get">
+                <h2>Solicitar Envío</h2>
+                <label for="origin">Origen</label>
+                <input type="text" id="origin" name="origin" placeholder="¿De dónde ?" required>
+                
+                <label for="destination">Destino</label>
+                <input type="text" id="destination" name="destination" placeholder="¿A dónde ?" required>
+                
+                <label for="cargo">Tipo de Carga</label>
+                <select name="menu-carga" id="menu-carga" class="menu-carga">
+                    <option value="paquetes" disabled>--- Elige el tipo de entrega ---</option>
+                    <option value="paquetes">Paquetes pequeños</option>
+                    <option value="alimentos">Alimentos</option>
+                    <option value="medicamentos">Medicamentos</option>
+                    <option value="documentos">Documentos</option>
+
+                </select>
+                
+                <input type="submit" class="button-submit" value="Solicitar Envío">
+            </form>
+            <img src="img/drone_yellow-removebg-preview.png" alt="">
+        </section>
+        
+        <section class="tracking-container" id="tracking-container">
+            <h2>Rastrear Paquete</h2>
+            <img class="img-tracking" src="img/drone_blueSky.png" alt="Drone Azul">
+            <form id="tracking-form">
+                <label for="tracking-id">ID de Rastreo</label>
+                <input type="text" id="tracking-id" name="tracking-id" placeholder="Ingresa el ID de Seguimiento " required>
+                <input type="submit" class="button-submit" value="Rastrear">
+            </form>
+                
+            
+            <div id="tracking-result">
+                <!--  información de seguimiento -->
+            </div>
+        </section>
+        
+        <section class="history-container" id="history-container">
+            <h2>Historial de Envíos</h2>
+            <img class="img-history" src="img/4drones_4paquetes.png" alt="Quatro Drones">
+            <ul id="shipment-history">
+                <!-- historial de los envíos -->
+            </ul>
+            
+        </section>
+
+        <button id="arrow-up" onclick="scrollToTop()">&#8593;</button>
+    </article>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Drone Delivery</h3>
+                <p>Revolucionando las entregas con tecnología avanzada de drones.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Logeo</a></li>
+                    <li><a href="dashboard.html">Panel de servicios</a></li>
+                    <li><a href="#tracking-container">Rastrear Pedido</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <ul class="social-media">
+                    <li><a href="#"><img src="img/icons/facebook.svg" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="img/icons/twitter.svg" alt="Twitter"></a></li>
+                    <li><a href="#"><img src="img/icons/instagram.svg" alt="Instagram"></a></li>
+                    <li><a href="#"><img src="img/icons/linkedin.svg" alt="LinkedIn"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Drone Delivery. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="arrow.js"></script>
+    <script src="hamburger.js"></script>
+</body>
+</html>
