@@ -1,4 +1,4 @@
-// Función para desplazarse hacia arriba
+// Scroll hacia arriba
 function scrollToTop() {
     window.scrollTo({
         top: 0,
@@ -6,7 +6,7 @@ function scrollToTop() {
     });
 }
 
-// Mostrar flecha cuando el usuario hace scroll hacia abajo
+// Scroll hacia abajo
 window.addEventListener('scroll', function() {
     var arrowUp = document.getElementById('arrow-up');
     if (window.scrollY > 300) {
